@@ -1,0 +1,12 @@
+{
+  "name": "bcbs-email-templater",
+  "version": "0.0.1",
+  "description": "BCBud.store drag and drop email template platform",
+  "author": "BCBud.store <webmaster@bcbud.store> (https://bcbud.store/)",
+  "homepage": "https://bcbud.store/",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}

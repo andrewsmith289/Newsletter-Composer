@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <link href="https://******.com" rel="stylesheet"/>
+  <link href="https://******.com" rel="stylesheet"/>
+
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="./grapesjs-preset-newsletter/node_modules/grapesjs/dist/grapes.min.js"></script>
+  <script src="./grapesjs-preset-newsletter/dist/grapesjs-preset-newsletter.min.js"></script>
+</head>
+<body>
+<div id="gjs" style="height:0px; overflow:hidden">
+
+
+  <style>
+    /**
+    * @tab Button
+    * @section background-Colour
+    */
+    .button {
+      /*@editable*/
+      background-color: #d45656 !important;
+      /*@editable*/
+      border-radius: 3px !important;
+      /*@editable*/
+      color: #ffffff !important;
+    }
+
+    /**
+    * @tab Button_2
+    * @section background-Colour
+    */
+    .button_2 {
+      /*@editable*/
+      background-color: #f06060 !important;
+      /*@editable*/
+      border-radius: 3px !important;
+      /*@editable*/
+      color: #ffffff !important;
+    }
+
+    /**
+     * @tab Red Bg Color
+    * @section background-Colour
+    */
+    .red_bg_color {
+      /*@editable*/
+      background-color: #333333 !important;
+
+    }
+
+    body {
+      margin: 0px !important;
+      padding: 0px !important;
+      -webkit-text-size-adjust: 100% !important;
+      -ms-text-size-adjust: 100% !important;
+      -webkit-font-smoothing: antialiased !important;
+    }
+
+    img {
+      border: 0 !important;
+      outline: none !important;
+      display: block !important;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0px;
+      mso-table-rspace: 0px;
+    }
+
+    td {
+      border-collapse: collapse;
+      mso-line-height-rule: exactly;
+    }
+
+    a, span {
+      mso-line-height-rule: exactly;
+    }
+
+    .ExternalClass * {
+      line-height: 100%;
+    }
+
+    .white a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .white1 a {
+      color: #e6e7e8;
+      text-decoration: none;
+      background-color: #333333;
+    }
+
+    .white2 a {
+      color: #f1f4f5;
+      text-decoration: none;
+    }
+
+    .black a {
+      color: #333333;
+      text-decoration: none;
+    }
+
+    .black3 a {
+      color: #333333;
+      text-decoration: none;
+    }
+
+    .black2 a {
+      color: #282828;
+      text-decoration: none;
+    }
+
+    .red a {
+      color: #f06060;
+      text-decoration: none;
+    }
+
+    .grey a {
+      color: #808080;
+      text-decoration: none;
+    }
+
+    .grey1 a {
+      color: #808080;
+      text-decoration: none;
+    }
+
+    .applewhiltelink a {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+
+    .video img {
+      width: 100%;
+      height: auto;
+    }
+
+    /*
+    ********.com
+    */
+    .underline {
+      border-bottom: 1px solid #999;
+    }
+
+    .light-grey {
+      color: #aaa;
+    }
+
+    .discount-exp {
+      border: 1px dashed #ccc;
+    }
+
+    .discount-td {
+      /*			padding: 12px;*/
+    }
+
+    .centre-text {
+      text-align: center;
+    }
+
+    .coupon {
+      padding: 0;
+    }
+
+    /*
+    *******.com End
+    */
+
+    @media only screen and (min-width: 481px) and (max-width: 599px) {
+      .wrapper {
+        width: 100% !important;
+      }
+
+      .main_table {
+        width: 100% !important;
+      }
+
+      .pad_side {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+      }
+
+      .hide {
+        display: none !important;
+      }
+
+      .full_img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .text, .black, .black2, .red, .white, .white1, .white2, .grey {
+        text-align: center !important;
+      }
+
+      .pad_bottom {
+        padding-bottom: 20px !important;
+      }
+
+      .pad_top {
+        padding-top: 20px !important;
+      }
+
+      .fix_height {
+        height: 20px !important;
+      }
+
+      .video .img {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      /*table[class=wrapper] {*/
+      .wrapper {
+        width: 100% !important;
+      }
+
+      .main_table {
+        width: 100% !important;
+      }
+
+      .pad_side {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+      }
+
+      .hide {
+        display: none !important;
+      }
+
+      .full_img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .text, .black, .black2, .red, .white, .white1, .white2, .grey {
+        text-align: center !important;
+      }
+
+      .pad_bottom {
+        padding-bottom: 20px !important;
+      }
+
+      .pad_top {
+        padding-top: 20px !important;
+      }
+
+      .fix_height {
+        height: 20px !important;
+      }
+
+      .video .img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .coupon-code {
+        font-size: 14px !important;
+        line-height: 20px;
+        text-transform: uppercase;
+        border: 1px dashed #333333;
+      }
+
+      #discount-exp td {
+        font-size: 12px !important;
+      }
+
+      .hide-small {
+        display: none !important;
+      }
+    }
+  </style>
+</div>
+
+<script type="text/javascript">
+  var tableStyleStr = '';
+  var cellStyleStr = '';
+  var editor = grapesjs.init({
+    container: '#gjs',
+    fromElement: true,
+    plugins: ['gjs-preset-newsletter'],
+    pluginsOpts: {
+      'gjs-preset-newsletter': {
+        modalTitleImport: 'Import template',
+        cellStyle: {},
+        tableStyle: {},
+      }
+    },
+  });
+            
+  //    editor.BlockManager.getAll().reset();
+
+  editor.BlockManager.add('view-in-browser', {
+    label: 'View in Browser Line',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-view-browser'},
+    // language=HTML
+    content: `
+      <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+        <tr>
+          <td align="center">
+            <table style="table-layout:fixed;" width="650" border="0" cellspacing="0" cellpadding="0" align="center"
+                   class="wrapper">
+              <tr>
+                <td class="hide" height="1" style="line-height:0px; font-size:0px;">
+                  <img src="https://******.com"
+                       alt="Spacer" height="1" width="650" style="display:block; width:650px; min-width:650px;"
+                       border="0"/>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+                    <tr>
+                      <td width="30" class="hide">&nbsp;</td>
+                      <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td height="25" class="fix_height">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table width="250" border="0" cellspacing="0" cellpadding="0" align="left"
+                                     class="wrapper">
+                                <tr>
+                                  <td class="black"
+                                      style="font-family:Arial, sans-serif; font-size:12px; line-height:15px; color:#333333;"
+                                      align="left">
+                                    Can't read this email?<br/>
+                                  </td>
+                                </tr>
+                              </table>
+                              <table width="250" border="0" cellspacing="0" cellpadding="0" align="right"
+                                     class="wrapper">
+                                <tr>
+                                  <td class="red"
+                                      style="font-family:Arial, sans-serif; font-size:12px; line-height:15px; 
+                                              color:#f06060;"
+                                      align="right">
+                                    <a href="https://******.com"
+                                       target="_blank" style="color:#f06060; text-decoration:none;">
+                                      View it in your browser.</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="25" class="fix_height">&nbsp;</td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td width="30" class="hide">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>`
+  });
+
+  editor.BlockManager.add('header-menu', {
+    label: 'Header Menu',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-header-menu'},
+    // language=HTML
+    content: `
+      <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+        <tr>
+          <td align="center">
+            <table style="table-layout:fixed;" width="650" border="0" cellspacing="0" cellpadding="0" align="center"
+                   class="wrapper">
+              <tr>
+                <td class="hide" height="1" style="line-height:0px; font-size:0px;">
+                  <img src="https://******.com"
+                       alt="Spacer" height="1" width="650" style="display:block; width:650px; min-width:650px;"
+                       border="0"/>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+              <tr>
+                <td bgcolor="#333333">
+                  <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+                    <tr>
+                      <td height="36" class="fix_height">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td valign="top">
+                        <table width="650" border="0" cellspacing="0"
+                               cellpadding="0" align="center" class="wrapper">
+                          <tr>
+                            <td width="30" class="hide"></td>
+                            <td valign="top">
+                              <table width="100%" border="0" cellspacing="0"
+                                     cellpadding="0" align="center">
+                                <tr>
+                                  <td valign="centre">
+                                    <table width="100" border="0"
+                                           cellspacing="0"
+                                           cellpadding="0" align="left"
+                                           class="wrapper">
+                                      <tr>
+                                        <td align="center">
+                                          <a href="https://******.com"
+                                             target="_blank">
+                                            <img
+                                                src="https://******.com/wp-content/uploads/promo_emails/_assets/images/ui/bcbstore-logo-white_32.gif"
+                                                width="141" height="32" alt="******.com" border="0"
+                                                style="display:block; max-width:141px;"/>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table width="352" border="0" cellspacing="0" cellpadding="0" align="right"
+                                           class="wrapper">
+                                      <tr>
+                                        <td valign="top"
+                                            class="pad_top">
+                                          <table width="352"
+                                                 border="0"
+                                                 cellspacing="0"
+                                                 cellpadding="0"
+                                                 align="center"
+                                                 class="wrapper">
+                                            <tr>
+                                              <td width="88"
+                                                  height="32"
+                                                  class="white1"
+                                                  style="font-family:Arial, sans-serif; font-size:14px; line-height:17px; color:#e6e7e8; background-color:#333333;"
+                                                  align="right">
+                                                <a href="https://******.com"
+                                                   target="_blank"
+                                                   style="color:#e6e7e8; text-decoration:none; background-color:#333333;"
+                                                   class="white1">Herb</a>
+                                              </td>
+                                              <td width="88"
+                                                  height="32"
+                                                  class="white1"
+                                                  style="font-family:Arial, sans-serif; font-size:14px; line-height:17px; color:#e6e7e8; background-color:#333333;"
+                                                  align="right">
+                                                <a href="https://******.com"
+                                                   target="_blank"
+                                                   style="color:#e6e7e8; text-decoration:none; background-color:#333333;"
+                                                   class="white1">Edibles</a>
+                                              </td>
+                                              <td width="88"
+                                                  height="32"
+                                                  class="white1"
+                                                  style="font-family:Arial, sans-serif; font-size:14px; line-height:17px; color:#e6e7e8; background-color:#333333;"
+                                                  align="right">
+                                                <a href="https://******.com"
+                                                   target="_blank"
+                                                   style="color:#e6e7e8; text-decoration:none; background-color:#333333;"
+                                                   class="white1">Shatter</a>
+                                              </td>
+                                              <td width="88"
+                                                  height="32"
+                                                  class="white1"
+                                                  style="font-family:Arial, sans-serif; font-size:14px; line-height:17px; color:#e6e7e8; background-color:#333333;"
+                                                  align="right">
+                                                <a href="https://******.com"
+                                                   target="_blank"
+                                                   style="color:#e6e7e8; text-decoration:none; background-color:#333333;"
+                                                   class="white1">Creations</a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td width="30" class="hide"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="36" class="fix_height">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>`
+  });
+
+  editor.BlockManager.add('image-fullwidth', {
+    label: 'Full-width Image',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-img-fw'},
+    content: `
+              <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" style="table-layout:fixed;">
+                <tr>
+                  <td align="center" valign="top">
+                    <img class="full_img"
+                         src="dist/images/650x400.jpg"
+                         width="650" height="400" alt="******.com Photo Contest"
+                         style="display:block;border:none;max-width:650px;max-height:400px;"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="20" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+              </table>`
+  });
+
+  editor.BlockManager.add('main-title', {
+    label: 'Main Title',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-main-title'},
+    content: `
+              <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" style="table-layout:fixed;">
+                <tr>
+                  <td width="30" class="hide">&nbsp;</td>
+                  <td class="pad_side">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+                      <tr>
+                        <!-- <td class="black" align="center" valign="top" style="font-family:Arial, sans-serif;font-size:14px;line-height:17px;color:#333333;">Sub Title here</td> -->
+                      </tr>
+                      <tr>
+                        <td height="7" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="grey" style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">
+                          &nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="black" align="center" valign="top"
+                            style="font-family:Arial, sans-serif;font-size:24px;line-height:27px;color:#333333;">
+                            Photo Contest &amp; The Best, for Less Sale!
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="13" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top">
+                          <table width="120" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td height="4" style="line-height:1px;font-size:1px;" bgcolor="#f06060">&nbsp;</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="40" style="line-height:1px;font-size:1px;height:40px" class="fix_height">&nbsp;</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td width="30" class="hide">&nbsp;</td>
+                </tr>
+              </table>`
+  });
+
+  editor.BlockManager.add('text-block', {
+    label: 'Text Block',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-text-block'},
+    content: `
+              <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper"
+                style="table-layout:fixed;">
+                <tr>
+                  <td class="pad_side">
+                    <table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper">
+                      <tr>
+                        <td width="45" class="hide">&nbsp;</td>
+                        <td>
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td class="grey" align="left" style="font-family:Arial, sans-serif; font-size:14px; 
+                                line-height:20px; color:#808080;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec vitae metus molestie, maximus enim at, vehicula lectus. 
+                                Etiam id semper nibh. Praesent lacinia neque nec aliquam luctus. 
+                                Pellentesque mattis libero in efficitur facilisis. Ut nec sollicitudin ligula. 
+                                Cras ut urna at odio volutpat sollicitudin rhoncus eget leo.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="grey"
+                                  style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">
+                                &nbsp;
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>`
+  });
+
+  editor.BlockManager.add('cpn-date-time-intro', {
+    label: 'Coupon Date/Time Intro',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-cpn-date-time-intro'},
+    content: `
+            <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper"
+              style="table-layout:fixed;">
+              <tr>
+                <td class="pad_side">
+                  <table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper">
+                    <tr>
+                      <td width="45" class="hide">&nbsp;</td>
+                      <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td class="grey" align="left" style="font-family:Arial, sans-serif; font-size:14px; 
+                              line-height:20px; color:#808080;">
+                              Simply visit the <a style="border-bottom: 1px solid #999;"
+                                                class="underline" target="_blank"
+                                                href="https://******.com">store</a> now through
+                              <strong>Thursday, September 21st</strong>, and use the following coupon code at checkout:
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="grey"
+                                style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>`
+  });
+
+  editor.BlockManager.add('coupon-details', {
+    label: 'Coupon Details',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-coupon-details'},
+    content: `
+              <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper"
+                style="table-layout:fixed;">
+                <tr>
+                  <td class="pad_side">
+                    <table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper">
+                      <tr>
+                        <td>
+                          <table style="width:100%">
+                            <tr>
+                              <td width="45" class="hide">&nbsp;</td>
+                              <td>
+                                <p align="center" class="coupon-code"
+                                   style="color: #848484; font-size: 24px; line-height: 32px"><strong>onlythebestwilldo</strong>
+                                </p>
+                              </td>
+                              <td>
+                                <table class="discount-exp" align="right">
+                                  <tr>
+                                    <td class="grey"
+                                        style="font-family:Arial, sans-serif; font-size:14px; line-height:20px; color:#808080;">
+                                      <span class="hide-small">&nbsp;&nbsp;</span>
+                                      20.0% 
+                                      <span class="light-grey">Sale <span class="hide-small">Discount</span></span><br />
+                                      +
+                                      <span class="underline">
+                                        12.0%
+                                        <span class="light-grey" style="border-bottom: 1px solid #999999">
+                                          Bitcoin <span class="hide-small">Discount</span>
+                                        </span>
+                                      </span><br />
+                                      = <strong>32.0%</strong> 
+                                      <span class="light-grey" style="color: #aaa">
+                                        Total <span class="hide-small">Discount</span>&nbsp;&nbsp;&nbsp;
+                                      </span>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td width="45" class="hide">&nbsp;</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>`
+  });
+
+  editor.BlockManager.add('signature', {
+    label: 'Signature',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-signature'},
+    content: `
+              <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper"
+                style="table-layout:fixed;">
+                <tr>
+                  <td class="pad_side">
+                    <table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper">
+                      <tr>
+                        <td width="45" class="hide">&nbsp;</td>
+                        <td>
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td class="grey"
+                                style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080; text-align: left !important;">
+                                 Until next time,
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="grey" style="font-family:Arial, sans-serif; font-size:13px; height:60px; color:#808080;">
+                                <img width="122" height="48" alt="Signed,"
+                                     src="https://******.com/wp-content/uploads/promo_emails/_assets/images/ui/sig2.jpg"
+                                     style="height: 48px; width: 122px;"/>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="grey"
+                                  style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080; text-align: left !important;">
+                                Walter Green
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="grey"
+                                  style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">
+                                &nbsp;
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>`
+  });
+
+  editor.BlockManager.add('red-cta', {
+    label: 'CTA / Button',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-cta'},
+    content: `
+            <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper"
+              style="table-layout:fixed;">
+              <tr>
+                <td class="pad_side">
+                  <table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper">
+                    <tr>
+                      <td width="45" class="hide">&nbsp;</td>
+                      <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td height="43" valign="top">
+                              <table border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper">
+                                <tr>
+                                  <td>
+                                    <table border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td height="43" class="button_2" align="center"
+                                            style=" font-family:Arial, sans-serif; font-size:16px; line-height:16px; color:#ffffff; border-radius:3px;"
+                                            bgcolor="#f06060">
+                                          <a href="https://******.com" target="_blank"
+                                             style="text-decoration:none; color:#ffffff;" class="button_2">
+                                            &nbsp;&nbsp;&nbsp;SHOP NOW&nbsp;&nbsp;&nbsp;
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="grey"
+                                style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>`
+  });
+
+  editor.BlockManager.add('heading-lg', {
+    label: 'Heading Large',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-heading-lg'},
+    content: `
+              <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper" 
+                style="table-layout:fixed;">
+                <tr>
+                  <td valign="top" class="pad_side">
+                    <table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper">
+                      <tr>
+                        <td class="grey"
+                            style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">&nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="45" class="hide">&nbsp;</td>
+                        <td class="grey"
+                            style="font-family:Arial, sans-serif; font-size:22px; line-height:20px; color:#808080;">
+                            <strong>Heading Large</strong>
+                        </td>
+                        <td width="45" class="hide">&nbsp;</td>            
+                      </tr>
+                      <tr>
+                        <td class="grey"
+                            style="font-family:Arial, sans-serif; font-size:13px; line-height:40px; color:#808080;">&nbsp;
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>`
+  });
+
+  let testimonialHtml = `
+            <tr>
+              <td class="black2"
+                  style="font-family:Arial, sans-serif; font-size:18px; line-height:20px; color:#282828;">
+                "Sed Felis Augue!"
+              </td>
+            </tr>
+            <tr>
+              <td height="12" style="line-height:0px; font-size:0px;">&nbsp;</td>
+            </tr>              
+            <tr>
+              <td class="grey"
+                  style=" font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">
+                Praesent tortor arcu, viverra non faucibus non, pharetra id lectus. 
+                Cras tellus nibh, tincidunt a pulvinar eget, eleifend ac lorem. 
+                Phasellus elementum ex eu justo ultrices, id tincidunt velit placerat.
+                Suspendisse potenti. Praesent metus dui, vestibulum id mollis quis, molestie vel risus. 
+                Phasellus pulvinar neque vitae purus tempor rhoncus. In at tortor enim.
+              </td>
+            </tr>
+            <tr>
+              <td height="30">&nbsp;</td>
+            </tr>`;
+
+  editor.BlockManager.add('testimonials-2x1', {
+    label: 'Testimonials 2x1',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-testimonials-2x1'},
+    // language=HTML
+    content: `
+              <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper" 
+                style="table-layout:fixed;">
+                <tr>
+                  <td valign="top" class="pad_side">
+                    <table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper">
+                      <tr>
+                        <td class="grey"
+                            style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">&nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="45" class="hide">&nbsp;</td>
+                        <td class="grey"
+                            style="font-family:Arial, sans-serif; font-size:22px; line-height:20px; color:#808080;">
+                          <strong>People have been saying...</strong>
+                        </td>
+                        <td width="45" class="hide">&nbsp;</td>              
+                      </tr>
+                      <tr>
+                        <td class="grey"
+                            style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">&nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="45" class="hide">&nbsp;</td>
+                        <td>
+                          <table width="265" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper">
+                            ${testimonialHtml}
+                          </table>
+                          <table width="265" border="0" cellspacing="0" cellpadding="0" align="right" class="wrapper">
+                            ${testimonialHtml}
+                          </table>
+                        </td>
+                        <td width="45" class="hide">&nbsp;</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="50" class="fix_height">&nbsp;</td>
+                </tr>
+            </table>`
+  });
+
+  editor.BlockManager.add('footer-compliant', {
+    label: 'Footer',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-footer'},
+    // language=HTML
+    content: `
+      <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+        <tr>
+          <td bgcolor="#333333" class="pad_side">
+            <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+              <tr>
+                <td height="35" class="fix_height">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="center">
+                  <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+                    <tr>
+                      <td width="100" class="hide">&nbsp;</td>
+                      <td>
+                        <table width="450" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+                          <tr>
+                            <td class="grey"
+                                style="font-family:Arial, sans-serif; font-size:12px; line-height:22px; color:#808080; background-color:#333333;">
+                              Copyright © 2017 <a href="https://******.com">******.com</a>,
+                              All rights reserved.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="20">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td class="grey" align="center"
+                                style="font-family:Arial, sans-serif; font-size:11px; line-height:18px; color:#808080; background-color:#333333;">
+                              You've received this email because you've previously done
+                              business with ******.com and/or otherwise indicated interest in
+                              receiving our emails. <br/>
+                              If this is not the case, and/or you wish to unsubscribe,
+                              please click the link at the bottom of this email.
+                              We're sorry if we've caused any inconvenience.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="20">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td class="grey" align="center"
+                                style="font-family:Arial, sans-serif; font-size:12px; line-height:22px; color:#808080; background-color:#333333;">
+                              Our mailing address is:<br/>
+                              [Sender_Name] <br/>
+                              [Sender_Address] <br/>
+                              [Sender_City], [Sender_State] <br/>
+                              [Sender_ZIP]
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="20">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center"
+                                style="font-family:Arial, sans-serif; font-size:12px; line-height:22px; color:#808080; background-color:#333333;">
+                              <a href="https://******.com" target="_blank" style="color:#f06060; text-decoration:underline;">
+                                <span class="red">unsubscribe from this list</span></a>
+                              &nbsp;&nbsp;
+                              <span class="grey">
+                                        <a href="https://******.com" target="_blank"
+                                           style="color:#808080; text-decoration:none;">
+                                          update subscription preferences</a>
+                                      </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="20">&nbsp;</td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td width="100" class="hide">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td height="35" class="fix_height">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>`
+  });
+
+  let products3x1Html = `
+            <tr>
+              <td>
+                <table width="170" border="0" align="center" cellpadding="0"
+                       cellspacing="0" class="wrapper">
+                  <tr>
+                    <td align="center"><a
+                        href="https://******.com"
+                        target="_blank"><img
+                        src="dist/images/170x162.jpg"
+                        width="170" height="162" alt="Product Name"                                
+                        style="display:block; max-width:170px;" border="0"/></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="28" class="fix_height">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="black"
+                        style="font-family:Arial, sans-serif; font-size:18px; line-height:20px; color:#333333;">
+                      Product Name
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="13" style="line-height:0px; font-size:0px;">&nbsp;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="grey"
+                        style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">
+                      Product Description Line 1 <br />
+                      Product Description Line 2 <br />
+                      Product Description Line 3
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="17" style="line-height:0px; font-size:0px;">&nbsp;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="43" valign="top">
+                      <table border="0" align="left" cellpadding="0"
+                             cellspacing="0" class="wrapper">
+                        <tr>
+                          <td>
+                            <table border="0" align="center" cellpadding="0"
+                                   cellspacing="0">
+                              <tr>
+                                <td height="43" class="button_2"
+                                    align="center"
+                                    style=" font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;"
+                                    bgcolor="#f06060">
+                                  <a href="https://******.com" target="_blank"
+                                    style="text-decoration:none; color:#ffffff;" class="button_2">
+                                    &nbsp;&nbsp;&nbsp;View Product&nbsp;&nbsp;
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="28" class="fix_height">&nbsp;</td>
+            </tr>
+          `;
+  editor.BlockManager.add('products-3x1', {
+    label: 'Products 3x1',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-products-3x1'},
+    // language=HTML
+    content: `
+                <table width="650" border="0" align="center" cellpadding="0" class="wrapper" cellspacing="0" style="table-layout:fixed">
+                  <tr>
+                    <td class="pad_side">
+                      <table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper">
+                        <tr>
+                          <td width="45" class="hide">&nbsp;</td>
+                          <td valign="top">
+                            <table width="366" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper">
+                              <tr>
+                                <td valign="top">
+                                  <table width="170" border="0" align="left" cellpadding="0" cellspacing="0"
+                                         class="wrapper">
+                                    ${products3x1Html}
+                                  </table>
+                                  <table width="170" border="0" align="right" cellpadding="0" cellspacing="0"
+                                         class="wrapper">
+                                    ${products3x1Html}
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <table width="170" border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper">
+                              ${products3x1Html}
+                            </table>
+                          </td>
+                          <td width="45" class="hide">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>                  
+                </table>`
+  });
+
+  let featured2x1Html = `
+              <tr>
+                <td align="center" valign="top"><img src="dist/images/265x130.jpg" width="265" 
+                height="130" alt="img_265X130" style="display:block;border:none; max-width:265px;" /></td>
+              </tr>
+              <tr>
+                <td height="25" class="fix_height">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="black" align="left" valign="top" style="font-family:Arial, sans-serif;font-size:18px;line-height:24px;color:#333333;">Lorem ipsum text</td>
+              </tr>
+              <tr>
+                <td height="8" style="line-height:1px;font-size:1px;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="grey" align="left" valign="top" style="font-family:Arial, sans-serif;font-size:13px;line-height:20px;color:#808080;">Unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+              </tr>
+              <tr>
+                <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="red" align="left" valign="top" 
+                  style="font-family:Arial, sans-serif;font-size:13px;line-height:20px;color:#f06060;">
+                <a href="https://******.com" target="_blank" style="text-decoration:none;color:#f06060;">Read More +</a></td>
+              </tr>
+            `;
+  editor.BlockManager.add('featured-2x1', {
+    label: 'Featured 2x1',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-featured-2x1'},
+    // language=HTML
+    content: `
+              <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" style="table-layout:fixed;">
+                <tr>
+                  <td class="pad_side">
+                    <table width="310" border="0" cellspacing="0" cellpadding="0" align="left" class="wrapper">
+                      <tr>
+                        <td align="center" valign="top">
+                          <table width="310" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+                            <tr>
+                              <td width="45" class="hide">&nbsp;</td>
+                              <td valign="top">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">                        
+                                  ${featured2x1Html}
+                                  <tr>
+                                    <td height="40" style="line-height:1px;font-size:1px;" class="hide">&nbsp;</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="310" border="0" cellspacing="0" cellpadding="0" align="right" class="wrapper">
+                      <tr>
+                        <td align="center" valign="top">
+                          <table width="310" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper">
+                            <tr>
+                              <td align="left" valign="top">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  ${featured2x1Html} 
+                                  <tr>
+                                    <td height="40" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td width="45" class="hide">&nbsp;</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+    `
+  });
+
+  let products2x1Html = `
+              `;
+  editor.BlockManager.add('products-w-price-2x1', {
+    label: 'Products w/ Price 2x1',
+    category: 'Elements',
+    attributes: {class: 'gjs-fonts gjs-b-products-w-price--2x1'},
+    // language=HTML
+    content: `
+      <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper"
+             style="table-layout:fixed;">
+        <tr>
+          <td class="pad_side">
+            <table width="650" border="0" cellspacing="0" cellpadding="0" class="wrapper">
+              <tr>
+                <td width="45" class="hide">&nbsp;</td>
+                <td>
+                  <table width="240" border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper">
+                    <tr>
+                      <td>
+                        <table width="240" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper">
+                          <tr>
+                            <td align="center"><a href="https://******.com" target="_blank"><img src="dist/images/240x260.jpg"
+                                                                                width="240"
+                                                                                height="260"
+                                                                                alt="Replace this placeholder with your own image"
+                                                                                style="display:block; max-width:240px;"
+                                                                                border="0"/></a></td>
+                          </tr>
+                          <tr>
+                            <td height="28" class="fix_height">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td class="black"
+                                style="font-family:Arial, sans-serif; font-size:18px; line-height:20px; color:#333333;">
+                              Lorem ipsum text
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="13" style="line-height:0px; font-size:0px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td class="grey"
+                                style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">
+                              Pellentesque vitaeLorem ipsum dol amet, consectetur adipiscing elit.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="18" style="line-height:0px; font-size:0px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td class="grey"
+                                style="font-family:Arial, sans-serif; font-size:14px; line-height:20px; text-decoration:line-through; color:#808080;">
+                              MRP $86.00
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text"
+                                style="font-family:Arial, sans-serif; font-size:18px; line-height:20px; color:#333333;">
+                              <span class="black">Our Price</span> <span style="font-weight:bold; color:#f06060;"
+                                                                         class="red">$40.00</span></td>
+                          </tr>
+                          <tr>
+                            <td height="17" style="line-height:0px; font-size:0px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td height="43" valign="top">
+                              <table border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper">
+                                <tr>
+                                  <td>
+                                    <table border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td height="43" class="button_2" align="center"
+                                            style=" font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;"
+                                            bgcolor="#f06060"><a href="https://******.com" target="_blank"
+                                                                 style="text-decoration:none; color:#ffffff;"
+                                                                 class="button_2">&nbsp;&nbsp;&nbsp;CALL TO ACTION&nbsp;&nbsp;&nbsp;</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table width="240" border="0" align="right" cellpadding="0" cellspacing="0" class="wrapper">
+                    <tr>
+                      <td>
+                        <table width="240" border="0" align="center" cellpadding="0" cellspacing="0" class="wrapper">
+                          <tr>
+                            <td align="center" class="pad_top"><a href="https://******.com" target="_blank"><img src="dist/images/240x260.jpg"
+                                                                                                width="240" height="260"
+                                                                                                alt="img_240X260"
+                                                                                                style="display:block; max-width:240px;"
+                                                                                                border="0"/></a></td>
+                          </tr>
+                          <tr>
+                            <td height="28" class="fix_height">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td class="black"
+                                style="font-family:Arial, sans-serif; font-size:18px; line-height:20px; color:#333333;">
+                              Lorem ipsum text
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="13" style="line-height:0px; font-size:0px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td class="grey"
+                                style="font-family:Arial, sans-serif; font-size:13px; line-height:20px; color:#808080;">
+                              Pellentesque vitaeLorem ipsum dol amet, consectetur adipiscing elit.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="18" style="line-height:0px; font-size:0px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td class="grey"
+                                style="font-family:Arial, sans-serif; font-size:14px; line-height:20px; text-decoration:line-through; color:#808080;">
+                              MRP $86.00
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text"
+                                style="font-family:Arial, sans-serif; font-size:18px; line-height:20px; color:#333333;">
+                              <span class="black">Our Price</span>
+                              <span style="font-weight:bold; color:#f06060;" class="red">$40.00</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="17" style="line-height:0px; font-size:0px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td height="43" valign="top">
+                              <table border="0" align="left" cellpadding="0" cellspacing="0" class="wrapper">
+                                <tr>
+                                  <td>
+                                    <table border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td height="43" class="button_2" align="center"
+                                            style="font-family:Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff; border-radius:3px;"
+                                            bgcolor="#f06060">
+                                          <a href="https://******.com" target="_blank" style="text-decoration:none; color:#ffffff;"
+                                             class="button_2">
+                                            &nbsp;&nbsp;&nbsp;CALL TO ACTION&nbsp;&nbsp;&nbsp;
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="45" class="hide">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td height="60" class="fix_height">&nbsp;</td>
+        </tr>
+      </table>`
+  });
+</script>
+
+</body>
+</html>
